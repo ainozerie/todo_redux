@@ -2,24 +2,36 @@
     margin: 0;
     padding: 0;
     font-family: monospace;
+
 }
 body {
     background-color: whitesmoke;
-}
-main {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
 }
+main {
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+h1 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #0A2E36;
+    
+}
 button {
-    width: 60px;
+    width: 100px;
     height: 25px;
-    border: none;
     background-color: #0A2E36;
     color: white;
+    border: 1px solid rgb(255, 255, 255, 0);
     cursor: pointer;
     transition: ease;
     transition-duration: 0.3s;
@@ -30,9 +42,72 @@ button:hover {
 }
 input {
     height: 25px;
+    width: 290px;
     border: none;
     border-left: 3px solid #0A2E36;
-    margin-right: 5px;
     padding-left: 5px;
     outline: none;
+    font-size: 13px;
+}
+input::placeholder {
+    color: lightgray;
+}
+input:first-child {
+    width: 90px;
+}
+.add-task {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.notes {
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+.note {
+    width: 497px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 3px solid #2EC4B6;
+    background-color: white;
+}
+.content {
+    display: flex;
+    align-items: center;
+}
+.note p {
+    margin-left: 5px;
+}
+.mark-done {
+    background-color: limegreen;
+    width: 40px;
+}
+.mark-delete {
+    background-color: #D90368;
+    width: 60px;
+}
+.mark-done:hover, .mark-delete:hover {
+    background-color: #0A2E36;
+    color: white;
+}
+.doneNote {
+    border-left: 3px solid #D90368;
+    color: lightgrey;
+}
+.doneNote .mark-delete {
+    background-color: white;
+    color: #0A2E36;
+}
+.doneNote .mark-delete:hover {
+    color: #D90368;
 }

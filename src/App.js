@@ -1,6 +1,6 @@
 import './App.css';
-import AddTask from './components/AddTask';
-import Notes from './components/Notes';
+import AddTask from './components/TODO/AddTask';
+import Notes from './components/TODO/Notes';
 
 function App() {
   return (
